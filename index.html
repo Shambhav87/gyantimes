@@ -1,0 +1,274 @@
+<!DOCTYPE html> 
+<!-- Yeh document type define karta hai ki yeh ek HTML5 document hai -->
+
+<html lang="en"> 
+<!-- Yeh HTML document ka root element hai aur language English set karta hai -->
+
+<head>
+    <!-- Head section me meta tags, title, aur external resources include hote hain -->
+    <meta charset="UTF-8"> 
+    <!-- Character encoding UTF-8 set karta hai taaki special characters support ho -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <!-- Responsive design ke liye viewport settings -->
+
+    <title>Gyan Times</title> 
+    <!-- Webpage ka title jo browser tab me dikhega -->
+     <link rel="shortcut icon" href="logo (2).png">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet"> 
+    <!-- Google font load kar raha hai -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> 
+    <!-- FontAwesome icons include kar raha hai -->
+
+    <link rel="stylesheet" href="styles.css"> 
+    <!-- External CSS file connect kar raha hai -->
+</head>
+
+<body>
+    <!-- Body section me webpage ka content hota hai -->
+    <header>
+        <!-- Header section jo top par dikhta hai -->
+        <nav>
+            <!-- Navigation bar -->
+            <div class="desktop-only"> 
+                <!-- Yeh sirf desktop screens ke liye visible hoga -->
+                <div class="date-container">
+                    <span class="current-date"></span> 
+                    <!-- Yeh dynamic date display karega -->
+
+                    <a class="e-Paper" href="#" aria-label="Read e-Paper">e-Paper</a> 
+                    <!-- e-Paper ka link -->
+                </div>
+
+                <button class="login-btn" aria-label="Login"> 
+                    <!-- Login button -->
+                    LOGIN <i class="fas fa-user-alt"></i> 
+                    <!-- FontAwesome ka user icon -->
+                </button>
+            </div>
+
+            <!-- Logo on the left -->
+            <a href="index.html" class="logo"> <img src="logo (2).png" alt="Gyan Times Logo"> Gyan Times</a>
+            <!-- Website ka logo ya naam -->
+
+            <!-- Hamburger menu button -->
+            <button class="hamburger" aria-label="Toggle navigation menu" aria-expanded="false"> 
+                <!-- Mobile menu toggle button -->
+                <i class="fas fa-bars"></i> 
+                <!-- Hamburger icon -->
+            </button>
+
+            <!-- Navigation Links -->
+            <ul class="nav-links"> 
+                <!-- Navigation menu -->
+                <li><a href="index.html">Home</a></li> 
+                <!-- Home link -->
+
+                <li><a href="about.html">About</a></li> 
+                <!-- About link -->
+
+                <li><a href="blog.html">Blog</a></li> 
+                <!-- Blog link -->
+
+                <li><a href="services.html">Services</a></li> 
+                <!-- Services link -->
+
+                <li><a href="contect.html">Contact</a></li> 
+                <!-- Contact link -->
+
+                <!-- Mobile-only section -->
+                <li class="mobile-only"> 
+                    <!-- Yeh sirf mobile devices pe dikhega -->
+                    <div class="date-container">
+                        <span class="current-date"></span> 
+                        <!-- Dynamic date -->
+                        <a class="e-Paper" href="#" aria-label="Read e-Paper">e-Paper</a>
+                    </div>
+                </li>
+
+                <li class="mobile-only"> 
+                    <!-- Mobile ke liye login button -->
+                    <button class="login-btn" aria-label="Login">
+                        LOGIN <i class="fas fa-user-alt"></i>
+                    </button>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <div class="search-container">
+            <input type="text" id="search-bar" placeholder="Search...">
+            <button id="search-button">Search</button>
+        </div>
+    </section>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <!-- Hero section jo main banner hai -->
+        <div class="hero-content">
+            <h1>Welcome to Gyan Times</h1> 
+            <!-- Hero section ka heading -->
+
+            <p>Discover a mix of free and premium services designed to empower and enhance your experience.</p> 
+            <!-- Hero section ka description -->
+
+            <a href="#" class="cta-button">Get Started</a> 
+            <!-- Call-to-action button -->
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section class="about">
+        <!-- About section -->
+        <h2>About Us</h2> 
+        <!-- About section ka heading -->
+
+        <p>We are a team of professionals dedicated to providing the best services to our customers.
+            <br>Our mission is to make your life easier and better.</p> 
+        <!-- About section ka description -->
+    </section>
+         
+    <section class="services">
+        <h2>Our Services</h2>
+        <div class="service-cards">
+            <a href="service1.html">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="service3.png" alt="Service 1 Image">
+                    </div>
+                    <div class="card-content">
+                        <h3>News</h3>
+                        <p>Get the latest updates and breaking <br> news across various categories <br> to stay informed.</p>
+                    </div>
+                </div>
+            </a>
+            <a href="service2.html">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="service1.png" alt="Service 2 Image">
+                    </div>
+                    <div class="card-content">
+                        <h3>Notes</h3>
+                        <p>Access concise and well-organized<br> notes  for easy learning<br> and quick reference.</p>
+                    </div>
+                </div>
+            </a>
+            <a href="service3.html">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="service2.png" alt="Service 3 Image">
+                    </div>
+                    <div class="card-content">
+                        <h3>Tools</h3>
+                        <p>Discover handy tools  to simplify  tasks <br>and boost your productivity.</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-container">
+            <!-- About Us Section -->
+            <div class="footer-about">
+                <a href="index.html" class="logo"> <img src="logo (2).png" alt="Gyan Times Logo"> Gyan Times</a>
+                <p>Your ultimate destination for a wide range of notes, study materials, and tools available in both free and premium versions. Stay informed with the latest news, current affairs, and government updates. Our services cater to everyone, from free offerings to premium levels, all designed to meet your diverse needs.
+                    <br>We are a team of dedicated professionals committed to delivering the best services to our customers. Our mission is to simplify and enhance your life by providing reliable and high-quality resources. Join us and experience the difference!</p>
+            </div>
+    
+            <!-- Contact Info Section -->
+             <!-- Second Row: Contact Info, Social Links, Useful Links -->
+            <div class="footer-second-row">
+                <div class="contact-info">
+                    <h3>Contact Us</h3>
+                    <p><a href="mailto:info@gyantimes.com"><i class="fas fa-envelope"></i> info@gyantimes.com</a></p>
+                    <p><a href="tel:+916200984630"><i class="fas fa-phone"></i> +91 6200984630</a></p>
+                    <p><a href="https://maps.app.goo.gl/5238SJmAWoj3NDoV9" target="_blank"><i class="fas fa-map-marker-alt"></i> Hajipur, India</a></p>
+                </div>
+        
+                <!-- Links Container (Social Links + Useful Links) -->
+                <div class="links-container">
+                    <!-- Social Links -->
+                    <div class="social-links">
+                        <h3>Follow Us</h3>
+                        <ul>
+                            <li><a href="#" aria-label="Youtube"><i class="fab fa-youtube"></i></a></li>
+                            <li><a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a></li>
+                            <li><a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a></li>
+                            <li><a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a></li>
+                        </ul>
+                    </div>
+        
+                    <!-- Useful Links -->
+                    <div class="useful-links">
+                        <h3>Useful Links</h3>
+                        <ul>
+                            <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                            <li><a href="about.html"><i class="fas fa-info-circle"></i> About</a></li>
+                            <li><a href="blog.html"><i class="fas fa-blog"></i> Blog</a></li>
+                            <li><a href="services.html"><i class="fas fa-cogs"></i> Services</a></li>
+                            <li><a href="contect.html"><i class="fas fa-envelope"></i> Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            
+            </div>
+        </div>
+    
+        <!-- Copyright and Policy Buttons Section -->
+        <div class="copyright-policy-container">
+            <p>&copy; 2025 <a href="#">Gyan Times</a>, India. All rights reserved.</p>
+            <div class="policy-buttons">
+                <a href="privacy policy.html" class="policy-btn">Privacy Policy</a>
+                <a href="terms and conditions.html" class="policy-btn">Terms and Conditions</a>
+                <a href="cancellation & refund policy.html" class="policy-btn">Cancellation & Refund Policy</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" onclick="scrollToTop()">
+        <!-- Back to top button -->
+        <img src="./up-arrow.png" alt="Up Arrow"> 
+        <!-- Up arrow icon -->
+    </button>
+
+    <!-- Dark Mode Toggle Button -->
+    <button class="dark-mode-toggle" aria-label="Toggle dark mode"> 
+        <!-- Dark mode enable/disable button -->
+        <i class="fas fa-moon"></i> 
+        <!-- Moon icon -->
+    </button>
+
+    <!-- Floating Toggle Button -->
+    <button class="floating-button" id="floatingButton" aria-label="Change Language">
+        <i class="fas fa-language"></i> <!-- Language Icon -->
+    </button>
+    
+    <!-- Language Selector (Hidden by Default) -->
+    <div class="language-selector" id="languageSelector">
+        <label for="language">Choose Language:</label>
+        <select id="language">
+            <option value="en">English</option>
+            <option value="hi">हिंदी</option>
+            <option value="bn">বাংলা</option>
+            <option value="mr">मराठी</option>
+            <option value="gu">ગુજરાતી</option>
+            <option value="te">తెలుగు</option>
+            <option value="ta">தமிழ்</option>
+            <option value="kn">ಕನ್ನಡ</option>
+            <option value="ml">മലയാളം</option>
+            <option value="pa">ਪੰਜਾਬੀ</option>
+            <option value="ur">اردو</option>
+        </select>
+    </div>
+
+    <script src="script.js"></script> 
+    <!-- External JavaScript file include kar raha hai -->
+</body>
+</html>
